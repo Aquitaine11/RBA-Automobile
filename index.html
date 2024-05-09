@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBA</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="Icon.png">
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Forum.html">Forum</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+        <ul>
+            <li><a href="Homepage.html"><img src="Logo.svg" height="150" width="100"></a></li>
+            <li class="hideonMobile"><a href="Blog.html">Blog</a></li>
+            <li class="hideonMobile"><a href="About.html">About</a></li>
+            <li class="hideonMobile"><a href="Forum.html">Forum</a></li>
+            <li class="hideonMobile"><a href="Login.html">Login</a></li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
+        </ul>
+    </nav>
+
+    <!--Slideshow-->
+  <div class="Allslides">
+    <div class="slideshow fade">
+      <img src="MainPic3.png" style="width: 100%;">
+    </div>
+
+    <div class="slideshow fade">
+      <img src="MainPic2.png" style="width: 100%;">
+    </div>
+
+    <div class="slideshow fade">
+      <img src="MainPic.png" style="width: 100%;">
+    </div>
+
+    <a class="prev" onclick="plusslides(-1)"><img src="Previous.png"></a>
+    <a class="next" onclick="plusslides(1)"><img src="Next.png"></a>
+  </div>
+  <br>
+    <!--Products/Models-->
+    <h1>Models</h1>
+  <br>
+    <div class="models">
+      <div class="filter">
+        <button class="active" data-name="All">Show All</button>
+        <button data-name="Porsche">Porsche</button>
+        <button data-name="Honda">Honda</button>
+        <button data-name="Toyota">Toyota</button>
+        <button data-name="Mitsubishi">Mitsubishi</button>
+        <button data-name="Nissan">Nissan</button>
+      </div>
+    </div>
+
+    <div class="filterable">
+      <!--Porsches-->
+      <div class="card" data-name="Porsche">
+        <a href="https://www.porsche.com/pap/_philippines_/models/718/"><img src="718.png" alt="Porsche 718">
+        <div class="card_body"></a>
+          <div class="card_title">Porsche 718</div>
+          <p class="card_text">More of what you love</p>
+        </div>
+      </div>
+      <div class="card" data-name="Porsche">
+        <a href="https://www.porsche.com/pap/_philippines_/models/911/"><img src="911.png" alt="Porsche 911"></a>
+        <div class="card_body">
+          <div class="card_title">Porsche 911</div>
+          <p class="card_text">Seize the Day</p>
+        </div>
+      </div>
+          <div class="card" data-name="Porsche">
+            <a href="https://www.porsche.com/pap/_philippines_/models/macan/"><img src="Macan.png" alt="Porsche Macan"></a>
+        <div class="card_body">
+          <div class="card_title">Porsche Macan</div>
+          <p class="card_text">Keep your essence</p>
+        </div>
+      </div>
+          <div class="card" data-name="Porsche">
+            <a href="https://www.porsche.com/pap/_philippines_/models/cayenne/"><img src="Cayenne.png" alt="Porsche Cayenne"></a>
+        <div class="card_body">
+          <div class="card_title">Porsche Cayenne</div>
+          <p class="card_text">Further Together</p>
+        </div>
+      </div>
+          <div class="card" data-name="Porsche">
+            <a href="https://www.porsche.com/pap/_philippines_/models/panamera/panamera-models/"><img src="Panamera.png" alt="Porsche Panamera"></a>
+        <div class="card_body">
+          <div class="card_title">Porsche Panamera</div>
+          <p class="card_text">Choose Boldly</p>
+        </div>
+      </div>
+          <div class="card" data-name="Porsche">
+            <a href="https://www.porsche.com/pap/_philippines_/models/taycan/"><img src="Taycan.png" alt="Porsche Taycan"></a>
+        <div class="card_body">
+          <div class="card_title">Porsche Taycan</div>
+          <p class="card_text">Overfeel</p>
+        </div>
+      </div>
+      <!--Honda-->
+      <div class="card" data-name="Honda">
+        <a href="https://www.hondaphil.com/model/city-hatchback"><img src="Hatchback.jpg" alt="Honda Hatchback"></a>
+        <div class="card_body">
+          <div class="card_title">Honda Hatchback</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Honda">
+        <a href="https://www.hondaphil.com/model/br-v"><img src="BR-V.jpg" alt="Honda BR-V"></a>
+        <div class="card_body">
+          <div class="card_title">Honda BR-V</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+          <div class="card" data-name="Honda">
+            <a href="https://www.hondaphil.com/model/city"><img src="City.jpg" alt="Honda City"></a>
+        <div class="card_body">
+          <div class="card_title">Honda City</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+          <div class="card" data-name="Honda">
+            <a href="https://www.hondaphil.com/model/brio"><img src="Brio.webp" alt="Honda Brio"></a>
+        <div class="card_body">
+          <div class="card_title">Honda Brio</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+          <div class="card" data-name="Honda">
+            <a href="https://www.hondaphil.com/model/civic"><img src="Civic.jpg" alt="Honda Civic"></a>
+        <div class="card_body">
+          <div class="card_title">Honda Civic</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+          <div class="card" data-name="Honda">
+            <a href="https://www.hondaphil.com/model/hr-v"><img src="HR-V.webp" alt="Honda HR-V"></a>
+        <div class="card_body">
+          <div class="card_title">Honda HR-V</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+          <div class="card" data-name="Honda">
+            <a href="https://www.hondaphil.com/model/cr-v"><img src="CR-V.jpg" alt="Honda CR-V"></a>
+        <div class="card_body">
+          <div class="card_title">Honda CR-V</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+          <div class="card" data-name="Honda">
+            <a href="https://www.hondaphil.com/model/civic-typer"><img src="Civic Type R.webp" alt="Honda Civic Type R"></a>
+        <div class="card_body">
+          <div class="card_title">Honda Civic Type R</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <!--Toyota-->
+          <div class="card" data-name="Toyota">
+            <a href="https://toyota.com.ph/land-cruiser"><img src="Land Cruiser.jpg" alt="Toyota Land Cruiser"></a>
+        <div class="card_body">
+          <div class="card_title">Toyota Land Cruiser</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+          <div class="card" data-name="Toyota">
+            <a href="https://toyota.com.ph/gr-supra"><img src="GR Supra.webp" alt="Toyota Gr Supra"></a>
+        <div class="card_body">
+          <div class="card_title">Toyota Gr Supra</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Toyota">
+        <a href="https://toyota.com.ph/gr-86"><img src="GR86.jpg" alt="Toyota GR86"></a>
+        <div class="card_body">
+          <div class="card_title">Toyota GR86</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Toyota">
+        <a href="https://www.toyota.com/corollahatchback/"><img src="Corolla Hatchback.jpg" alt="Toyota Corolla Hatchback"></a>
+        <div class="card_body">
+          <div class="card_title">Toyota Corolla Hatchback</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Toyota">
+        <a href="https://www.toyota.com/grandhighlander/"><img src="Grand Highlander.jpg" alt="Toyota Grand Highlander"></a>
+        <div class="card_body">
+          <div class="card_title">Toyota Grand Highlander</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Toyota">
+        <a href="https://www.toyota.com/sequoia/"><img src="Sequoia.jpg" alt="Toyota Sequoia"></a>
+        <div class="card_body">
+          <div class="card_title">Toyota Sequoia</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <!--Mitsubishi-->
+      <div class="card" data-name="Mitsubishi">
+        <a href="https://www.mitsubishi-motors.com.ph/cars/mirage-g4"><img src="Mirage G4.jpg" alt="Mirage"></a>
+        <div class="card_body">
+          <div class="card_title">Mitsubishi Mirage G4</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Mitsubishi">
+        <a href="https://www.mitsubishi-motors.com.ph/all-new-triton"><img src="Triton.jpg" alt="Triton"></a>
+        <div class="card_body">
+          <div class="card_title">Mitsubishi Triton</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Mitsubishi">
+        <a href="https://www.mitsubishi-motors.com.ph/cars/montero-sport"><img src="Montero.jpg" alt="Montero"></a>
+        <div class="card_body">
+          <div class="card_title">Mitsubishi Montero</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Mitsubishi">
+        <a href="https://www.mitsubishi-motors.com.ph/cars/outlander-phev"><img src="Outlander.jpg" alt="Outlander"></a>
+        <div class="card_body">
+          <div class="card_title">Mitsubishi Outlander</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <!--Nissan-->
+      <div class="card" data-name="Nissan">
+        <a href="https://www.nissan.ph/vehicles/new/Z.html"><img src="Z.jpg" alt="Z"></a>
+        <div class="card_body">
+          <div class="card_title">Nissan Z</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Nissan">
+        <a href="https://www.nissan.ph/vehicles/new/navara.html"><img src="Navara.jpg" alt="Navara"></a>
+        <div class="card_body">
+          <div class="card_title">Nissan Navara</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Nissan">
+        <a href="https://www.nissan.ph/vehicles/new/GT-R.html"><img src="GT-R.jpg" alt="GT-R"></a>
+        <div class="card_body">
+          <div class="card_title">Nissan GT-R</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <div class="card" data-name="Nissan">
+        <a href="https://www.nissan.ph/vehicles/new/patrol.html"><img src="Patrol.jpg" alt="Patrol"></a>
+        <div class="card_body">
+          <div class="card_title">Nissan Patrol</div>
+          <p class="card_text"></p>
+        </div>
+      </div>
+      <script src="Homepage.js"></script>
+</body>
+<!--Footer-->
+<footer>
+  <div class="social-links">
+    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="#"><i class='bx bxl-twitter'></i></a>
+    <a href="#"><i class='bx bxl-instagram'></i></a>
+    <a href="#"><i class='bx bxl-telegram'></i></a>
+  </div>
+  <p class="copyright">&copy; 2023 My Website. All rights reserved.</p>
+</footer>
+
+
+  

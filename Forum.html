@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBA Blog</title>
+    <link rel="stylesheet" href="Forum.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="Icon.png">
+  </head>
+  <body>
+    <script src="Forum.js"></script>
+      <!--Navigation Bar-->
+      <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Forum.html">Forum</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+        <ul>
+            <li><a href="Homepage.html"><img src="Logo.svg" height="150" width="100"></a></li>
+            <li class="hideonMobile"><a href="Blog.html">Blog</a></li>
+            <li class="hideonMobile"><a href="About.html">About</a></li>
+            <li class="hideonMobile"><a href="Forum.html">Forum</a></li>
+            <li class="hideonMobile"><a href="Login.html">Login</a></li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
+        </ul>
+    </nav>
+    <main>
+      <section id="topics">
+        <h2>Topics</h2>
+        <ul>
+          <li>
+            <h3><a href="https://www.britannica.com/technology/automobile">Automobile</a></h3>
+            <p>Posted by: User 1</p>
+            <p>Views: 100</p>
+            <p>Replies: 10</p>
+          </li>
+          <li>
+            <h3><a href="https://www.formula1.com/">Formula 1</a></h3>
+            <p>Posted by: User 2</p>
+            <p>Views: 200</p>
+            <p>Replies: 20</p>
+          </li>
+          <li>
+            <h3><a href="https://dirtcar.com/">Is it fun to watch Dirt Car Racing?</a></h3>
+            <p>Posted by: User 3</p>
+            <p>Views: 300</p>
+            <p>Replies: 30</p>
+          </li>
+        </ul>
+      </section>
+      <section id="new-topic">
+        <h2>New Topic</h2>
+        <form>
+          <label for="topic-title">Topic Title:</label><br>
+          <input type="text" id="topic-title" name="topic-title"><br>
+          <label for="topic-description">Topic Description:</label><br>
+          <textarea id="topic-description" name="topic-description"></textarea><br>
+          <input type="submit" value="Create Topic">
+        </form>
+      </section>
+    </main>
+  </body>
